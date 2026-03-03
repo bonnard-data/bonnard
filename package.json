@@ -1,0 +1,43 @@
+{
+  "name": "@bonnard/oss",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "dev:ui": "cd ui && vite",
+    "build:ui": "cd ui && vite build --outDir ../dist/ui",
+    "build:server": "tsc",
+    "build": "pnpm build:ui && pnpm build:server",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node dist/server/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "cors": "^2.8.6",
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "jose": "^6.1.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "@types/node": "^22.15.0",
+    "@types/express": "^5.0.6",
+    "@types/cors": "^2.8.19",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "vitest": "^4.0.18",
+    "vite": "^7.3.1",
+    "@vitejs/plugin-react": "^4.6.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1",
+    "tailwindcss": "^4.2.1",
+    "@tailwindcss/vite": "^4.2.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
