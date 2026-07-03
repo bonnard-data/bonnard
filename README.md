@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> **This repository is archived and no longer maintained.**
+> It was part of an earlier version of Bonnard. Our current products live at **[bonnard.dev](https://bonnard.dev)**. Start with **[`@bonnard/mcp-charts`](https://github.com/bonnard-data/mcp-charts)**.
+> Questions: pierre@bonnard.dev
+
 <p align="center">
   <a href="https://www.bonnard.dev">
     <picture>
